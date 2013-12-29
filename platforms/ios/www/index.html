@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <title></title>
+  
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css">
+
+    <link rel="stylesheet" href="css/gs.css">
+  
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="home">
+    <div>
+        <div>
+            <img class="gb-img" src="img/MegMcCarthy.png" alt="image"/>
+        </div>
+        <div class="gb-name">
+            Meg McCarthy
+        </div>
+        <div class="gb-job">
+          Executive Vice President, Operations and Technology
+        </div>
+
+        <div id="news" class="hlist">
+            
+        </div>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top" class="bar-style">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Articles -->
+<div data-role="page" id="articles">
+    <div class="page-title">
+        <span class="title">Articles</span>
+    </div>
+    <ul id="articleList" data-role="listview" data-divider-theme="b" class="list">
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a3" data-transition="slide">
+                <div class="source">Columbus Biz Insider</div><div class="ar-date">May 02, 2013</div><br/>
+                <div class="ar-title">Meg McCarthy - AETNA</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a4" data-transition="slide">
+                <div class="source">Forbes</div><div class="ar-date">Aug 05, 2013</div><br/>
+                <div class="ar-title">Meg McCarthy's Climb From CIO To EVP Of Operations And Technology At Aetna</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a5" data-transition="slide">
+                <div class="source">go.bloomberg.com</div><div class="ar-date">Feb 14, 2012</div><br/>
+                <div class="ar-title">Women Advance in the CIO Ranks. So Where Are the CEOs?</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a1" data-transition="slide">
+                <div class="source">sloanwomeninmanagement.com</div><div class="ar-date">Dec 29, 2011</div><br/>
+                <div class="ar-title">Spotlight on Meg McCarthy, Aetna</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a2" data-transition="slide">
+                <div class="source">insurancetech.com</div><div class="ar-date">Oct 09, 2007</div><br/>
+                <div class="ar-title">Aetna CIO Meg McCarthy Brings Disciplined Delivery to Aetna</div>
+            </a>
+        </li>
+    </ul>
+    
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--v1-->
+<div data-role="page" id="v1">
+    <a class="back arrow" href='#articles' data-transition="slide" onclick="stopCurrentVideo();">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/MegMcCarthy.png" alt="image"/>
+    <div class="d-title">
+        Cardinal Health's Chairman & CEO George Barrett on Board Leadership
+    </div>
+    <div class="a-body">
+        <video id="video1" style="width:300px" controls>
+            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!--a1-->
+<div data-role="page" id="a1">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/MegMcCarthy.png" alt="image"/>
+    <div class="d-title">
+        Spotlight on Meg McCarthy, Aetna
+    </div>
+    <div class="a-body">
+        <img src="http://www.sloanwomeninmanagement.com/wp-content/uploads/2011/12/Meg_McCarthy1.jpg" width="105" height="143" />
+        <p>Meg McCarthy is Executive Vice President of Innovation, Technology and Service Operations. She is responsible for clinical innovation, technology and service operations. Meg also has responsibility for process and performance improvement, procurement and real estate services for Aetna, Inc.</p>
+
+        <p>Ms. McCarthy served as Vice President and Head of Business Solutions Delivery at Aetna, which brought together all IT project management, development, quality engineering and IT-related business-process reengineering functions, necessary to create, develop and deliver end-to-end business solutions. She was named Aetna CIO in 2005.</p>
+        <p>Prior to joining Aetna in 2003, Ms. McCarthy was Senior Vice President of Information Technology at CIGNA Healthcare in Bloomfield, CT. She has 30 years of information systems and health care operations experience, with strengths in hospital, insurance and managed care business and systems. Her operations and consulting experience includes cost management, mergers, productivity management, care management, clinical work redesign, financial management, and information systems design and implementation.</p>
+        <p>Ms. McCarthy has also worked in the hospital industry in CIO positions at Catholic Health Initiatives, Denver, CO, one of the largest Catholic Systems in the country and at Franciscan Health System. She was a consulting partner at Ernst &amp; Young in the IT and Performance Improvement practice and also was with Andersen Consulting (Accenture) as a Senior Manager.</p>
+
+        <p>Recently, Ms. McCarthy was awarded 2011Winner’s Circle Stakeholder Award by venture-catalyst Springboard Enterprises in recognition of her impact as a leader and innovator.  Ms. McCarthy has been recognized as one of Insurance &amp; Technology Magazine&#8217;s “Elite 8” and Computerworld’s Top 100 leaders.</p>
+
+        <p>Ms. McCarthy has a Master of Public Health (MPH) degree, Hospital Administration, from Yale University, and a B.A. in Philosophy, Magna Cum Laude, from Providence College. Her professional affiliations include Yale University Hospital Administration Alumni Association and Yale University Delaware and Massachusetts Alumni Associations. Ms. McCarthy&#8217;s military experience includes U.S. Navy Medical Services Corps; Lieutenant at Bethesda Naval Hospital; and U.S. Navy Reserves, Lieutenant Commander.</p>
+        <p><strong>Was mentorship something you were looking for in a company? Who have been some of your biggest sponsors and mentors throughout you career?  How did you get them?  Do you have any recommendations for the women of MIT Sloan seeking out mentors? </strong><br />
+        I’m very fortunate. I’ve had the opportunity to work for great leaders at good companies throughout my career.  My mentoring experiences have been circular with each one allowing me to contribute, change and grow. Each of us has a requirement to find those who can help us excel and grow, and then pass along those lessons to others.  When seeking mentors, women should look for those individuals who are not locked in to one particular job or area because these  mentors recognize that the market that we live and work in is very dynamic and they are comfortable with sharing knowledge to help foster executive talent.</p>
+        <p><strong>How did you choose what area of your industry to focus on? What do you see as the big trends in your industry? How did this affect your decision to go into the health insurance industry?</strong><br />
+        My strong family influences as well as my education and work exposure brought me into the health care industry. It is an interesting time to be a leader in the healthcare industry.  Health plans face a changing marketplace which challenges us to innovate, motivates us to excel and will impact the way we do business.  The roles of innovation and technology have emerged as critical elements that will shape the future of health care.</p>
+        <p><strong>What drew you to Aetna specifically?</strong><br />
+        I was approached by former Aetna Chairman and CEO, Ron Williams, a graduate of MIT Sloan Fellows ’84, to join him at Aetna.  Ron recognized the importance of technology not only for increasing important customer engagement purposes, but also as an opportunity to introduce greater efficiency to the company.  The opportunity to run a very cost effective infrastructure organization in support of our portfolio of business capabilities was compelling.</p>
+        <p><strong>In our 2012 MIT Sloan Women in Management Conference, we will focus on topics such as &#8220;Why Don&#8217;t More Women Go Big? &#8211;Assessing the world of female entrepreneurship from all sides of the table&#8221; and &#8220;Who Is Keeping Women From The Board Room? &#8211;Exploring why women run only 3% of Fortune 500 companies.&#8221; We would welcome your thoughts on either or both of these topics.</strong><br />
+        I believe that as more women advance they will continue to be focused on business results and managing by metrics while remaining flexible in the senior roles they will play in organizations.  Emerging 21rst century trends (entrepreneurship, innovation, technology advances, social media) will present huge growth opportunities for women and entrepreneurship will be broadly recognized as an important mechanism for creating value.  Women led companies will be driving innovation, creating jobs and building new age, world class businesses.</p>
+        <p><strong>How do you think that we, as women, can eliminate the gender gap in business and leadership?</strong><br />
+        Aetna is an increasingly dynamic, global and information-intensive organization and we have been fortunate to have been able to attract women with science and computer related degrees.  Gender is not an issue, at Aetna, for women in either manager or individual contributor roles.  We are proud that our Information Technology group, for example, is made up of 41% of women compared to a national external benchmark of 25% of women in professional IT roles. At Aetna, women look for flexible work situations.  Our female professionals expect that they can and will balance family and work commitments versus making the tough choice not to pursue a career.  Our professionals work long hours and do so willingly and expect to the move up the ladder.</p>
+        <p><strong>Please feel free to comment any other related topics of interest, such as offering advice for the women of SWIM and our readers.</strong><br />
+        Be an expert in the area that you have responsibility, know your numbers and be accountable.  People know whether you know the work that you have responsibility for and it’s critically important that you take on that accountability.   Be your own advocate and think ahead about where you want your career to go.  Don’t undersell yourself to others in the organization.  Take advantage of the opportunities to learn more; volunteer to be on enterprise-wide programs or projects where you learn across the organization.</p>
+
+        <div class="gray-header">Published</div>
+        <div>Dec 29, 2011</div>
+
+        <div class="gray-header">Sources</div>
+        <div>sloanwomeninmanagement.com</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a2-->
+<div data-role="page" id="a2">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/MegMcCarthy.png" alt="image"/>
+    <div class="d-title">
+        Aetna CIO Meg McCarthy Brings Disciplined Delivery to Aetna
+    </div>
+    <div class="a-body">
+        <p>
+        By the time Meg Mccarthy joined Aetna in 2003, she had extensive experience on both the provider and payer sides of the healthcare industry, having been CIO at two major Catholic health systems and SVP of IT at Cigna (Philadelphia). These career milestones capped a professional journey in technology and healthcare that began with McCarthy's hospital work in her teens, continued with her earning a master's in public health/hospital administration from Yale, and led to a career in healthcare and IT consulting during which McCarthy held senior management and partnership positions at both Accenture (Chicago) and Ernst & Young (New York).</p>
+        
+        <p>
+        Hartford-based Aetna (more than $1.7 billion in 2006 net income) secured McCarthy's talents and experience at a crucial time not just for the healthcare industry -- when increasing costs were driving a revolution in consumer interaction with their health insurers -- but also for Aetna itself. After reporting losses of about $266 million in 2001, the carrier was in the early stages of a business transformation led by then-CEO Jack Rowe and president (now CEO and chairman) Ronald Williams.</p>
+
+        <img src="http://twimgs.com/financetech/art/_i/11_2007/Meg_McCarthy.jpg" width="250" height="373" border="0" alt="Meg McCarthy, Aetna" />
+
+        <p>
+        Williams, a graduate of MIT's Sloan School of Management with a background in the technology industry, recognized the importance of technology not only for increasingly important customer engagement purposes, but also as an opportunity to introduce greater efficiency to the ailing company. Over the years, however, Aetna had acquired several companies and, along with them, their technology platforms. "The assets of the acquired companies had not been integrated so that we had a standard operating platform from which to launch strategic technical initiatives," McCarthy explains.</p>
+
+        <p><strong>Integration Challenges</strong></p>
+
+        <p>
+        Williams, McCarthy relates, "Kicked off a body of work to integrate the technology platforms and build a very robust management information system." With those objectives in mind, "He could see that the level of process discipline needed in the IT organization wasn't there," McCarthy adds. "Aetna owned every methodology that was ever built, but they hadn't implemented any of the methodologies in a consistent fashion." 
+        </p>
+
+        <p>
+        With a view toward amending that problem, Williams hired McCarthy as head of Aetna Project Services. Within six months she was leading Aetna's newly formed Business Solutions Delivery (BSD) unit to drive program/project management capabilities for the company. Housed on the business side but reporting to then-CIO Wei Tih Cheng, BSD comprised more than 2,000 IT project management, application development, testing and production support services staff within an organization accountable for delivery of all IT business solutions at the carrier. "Over the next few years I worked with Ron and Wei Tih Cheng to focus on how we were governing the IT portfolios and how we were building discipline into all aspects of the IT organization," says McCarthy. 
+        </p>
+
+        <p>
+        With the retirement of Cheng, McCarthy was appointed Aetna's CIO in June 2005, reporting directly to Williams. With her promotion she took on responsibility for Aetna Information Services (AIS), which includes IT architecture, solution delivery, infrastructure and network services capabilities. Among the major initiatives McCarthy has driven to conclusion as CIO are the achievement of CMMI (capability maturity model integrated) Level 3 certification in February of this year, and the implementation and rollout of a consistent metrics model to track the performance of AIS and its progress against strategic objectives. 
+        </p>
+
+        <p>
+        In the past three and a half years, McCarthy relates, IT has significantly increased the volume of work it delivers to the business. "When we started this work we baselined a set of metrics around productivity, utilization, on-time delivery and business partner satisfaction," she says. "We have significantly improved on all those metrics, and we are a top-tier performer if you were to compare us to other companies on that basis." 
+        </p>
+
+        <p><strong>Six Sigma Standard</strong></p>
+
+        <p>
+        McCarthy singles out Aetna's network and data center infrastructure organization in this respect, which operates at a Six Sigma level and, she asserts, has no peer in the health insurance industry. "We run a very cost-efficient infrastructure organization in support of our portfolio of business capabilities," she says. "We are usually compared to large banks and have outperformed our banking colleagues by over 40 percent in all of the commodity aspects of the benchmarks that we apply annually."
+        </p>
+
+        <p>
+        McCarthy also has driven greater efficiency and ROI through the establishment of joint IT portfolio planning and governance. Aetna's IT steering committee -- which includes McCarthy, Williams, president and Joseph Zubretsky, Aetna's CFO and chief enterprise risk officer -- presides over the governance process, based on a three-year planning cycle. 
+        </p>
+
+        <p>
+        Working with key executives within Aetna's major business domains, the committee authorizes multiyear IT blueprints and road maps that are updated annually. According to McCarthy, the committee weighs priorities articulated within those documents to make decisions about the allocation of resources. "On a day-to-day basis we have a portfolio manager structure, so the IT leaders who work with me interface with portfolio management resources on the business side to work our way through any adjustments and rebalancing activities that are needed in response to business changes or other considerations," she says. 
+        </p>
+
+        <p>
+        The governance process mandates every project team to hold weekly meetings. McCarthy herself chairs a weekly meeting that serves as an escalation point for issues about scope, schedule or cost that may arise among the 300 or so projects that are likely to be ongoing at any point in time at Aetna. "If it's something I can't make a decision about, I will bring it to the IT steering committee or to Ron [Williams] directly," McCarthy says. 
+        </p>
+
+        <p>
+        Among the most recent notable deliveries emerging from this process, McCarthy continues, is the deployment of a personal health record (PHR) utilizing capabilities of Aetna subsidiary ActiveHealth Management, which builds decision-support capabilities for health plans. The PHR was rolled out first to about 30,000 Aetna employees in February and has since been deployed to more than 400,000 Aetna plan members, she says, explaining that the PHR is prepopulated with information Aetna has about a member. Members also can add information by performing a personal health assessment, which invites them to share information about a variety of health-related facts and activities, including medical issues, exercise levels, and regular use of vitamins or over-the-counter remedies, McCarthy adds.
+        </p>
+
+        <p>
+        The PHR's embedded decision-support capabilities enable personalized recommendations driven by "care algorithms," according to McCarthy. "We run data about members through what we call our CareEngine, and if the care algorithms generate something that is important for the member or their clinician to appreciate, we serve that information up in the form of a 'care consideration' that is sent to the physician and the member," she explains. "We believe this technology is very important in improving the quality of care of the members we serve, hopefully ensuring that they seek the attention they need sooner rather than later."
+        </p>
+
+        <div style="color:#fff">MEG McCARTHY</div><br>
+        <span style="color:#fff">Position: </span>Senior Vice President and Chief Information Officer, Aetna Size of IS Organization: 3,000.<br>
+        <span style="color:#fff">Career: </span>Prior to joining Aetna, McCarthy was SVP of IT at Cigna (Philadelphia). She also has served as CIO of Catholic Health Initiatives (Denver) and Franciscan Health System (Philadelphia), and held senior positions with Ernst & Young (New York) and Andersen Consulting (now Chicago-based Accenture).<br>
+        <span style="color:#fff">Delivery Philosophy: </span>
+        <div>- 'Focus on business results.</div>
+        <div>- 'Focus on the customer. Manage relationships and deliver value to the business.</div>
+        <div>- 'Focus on rigorous governance. Preempt as much as possible, flag and fix early, avoid surprises, and anticipate and manage risk. </div>
+        <div>- Manage by metrics. Have accountability for end-to-end project delivery.</div>
+        <div>- Develop reusable assets to drive efficiency.</div><br>
+        
+        <div class="gray-header">Published</div>
+        <div>Oct 09, 2007</div>
+        <div class="gray-header">Sources</div>
+        <div>insurancetech.com</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a3-->
+<div data-role="page" id="a3">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/MegMcCarthy.png" alt="image"/>
+    <div class="d-title">
+        Meg McCarthy - AETNA
+    </div>
+    <div class="a-body">
+        <img src="http://www.stemconnector.org/sites/default/files/100women_profiles/Meg%20McCarthy_small.jpg" alt="" width="200" height="280" />
+        <p>EVP, Innovation, Technology, and Service Operations</strong></p>
+        <p>Meg McCarthy is EVP, Innovation, Technology and Service Operations at Aetna. Meg also has responsibility for process and performance improvement, procurement and real estate services. Prior to joiningAetnain 2003, she was SVP of Information Technology at CIGNA Healthcare. She has 30 years of IS and health care operations experience, a Master of Public Health (MPH), Hospital Administration, from Yale University, and a B.A. in Philosophy, Magna Cum Laude, from Providence College. Her military experience includes U.S. Navy Medical Services Corps; Lieutenant at Bethesda Naval Hospital; and U.S. Navy Reserves, Lieutenant Commander.</p>
+
+        <p><strong><em>Why do you believe STEM Education and Workforce are important to our nation? </em></strong></p>
+        <p>As our economy becomes increasingly technology-driven, nurturing a workforce well-trained in the STEM disciplines is critical to the advancement of our country. By 2018, 8 million jobs in the U.S. economy will require a college degree in STEM. To maintain our global competitive edge, we must put the effort into making these subjects a key focus early on in our classrooms. We also must acknowledge the dearth of women in STEM jobs. There is a ripe opportunity for women to fill non-traditional positions in STEM roles as our workforce grows.</p>
+        <p>&nbsp;</p>
+        <p><strong><em>What traits do senior leaders need to effectively support and advance STEM today?</em></strong></p>
+        <p>As with any dynamic requiring much-needed change, leaders need to keep an open mind and a long-term view as they develop strategic plans. There are plentiful opportunities to support STEM-related education, training and research in disciplines beyond those we traditionally see women in. It is also vital leaders promote collaboration and development throughout their organizations; non-technical individuals working closely and transparently with STEM roles. I’m also a strong proponent of mentorship.</p>
+        <p>&nbsp;</p>
+        <p><strong><em>What principles do you apply to your professional and personal life to advance the STEM cause? </em></strong></p>
+        <p>As a woman in a STEM leadership role, I try to behave as a role model in my personal and professional endeavors. Professionally, I help clarify the line of sight from the work we do to the importance of keeping our constituents healthy through technology tools and solutions. Innovation and technology drive the future of health care, so the work we do is actually shaping the future of health care. Focusing on core company values, sharing our goals and vision with industry colleagues and business partners, and being an active member of the health information technology conversation are principles that help me bring STEM to a greater light.</p>
+
+        <p><strong><em>Which woman leader do you most admire, and why?</em></strong></p>
+        <p>I particularly admire Rear Admiral Grace Hopper – a U.S. Navy officer known for conceptualizing machine-independent programming language and credited for developing COBOL (as well as the term “debugging”). I share with her a history of service in the Navy and a Yale education. As a Navy Admiral, Grace received the Department of Defense Distinguished Service Medal, and has had Navy ships and supercomputers named for her. She achieved great success while simultaneously serving her country and revolutionizing the computer age. An outstanding role model for any woman interested in a STEM career, her accomplishments demonstrate the achievements that are attainable, even in what have been traditional male-dominated fields.</p>
+        <div class="gray-header">Sources</div>
+        <div>stemconnector.org</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a4-->
+<div data-role="page" id="a4">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/MegMcCarthy.png" alt="image"/>
+    <div class="d-title">
+        Meg McCarthy's Climb From CIO To EVP Of Operations And Technology At Aetna
+    </div>
+    <div class="a-body">
+        <p>Meg McCarthy has many of the common characteristics of other executives who have been featured in the Beyond CIO series. She has a non-technical graduate degree in the field that she has long been linked to (the degree is a master of public health with a concentration in hospital administration); she spent time as a partner in a major consulting firm, Ernst &amp; Young, and a senior manager at another one, Accenture; she has been an IT executive at multiple major companies, including at CIGNA. Despite having a focus on technology for most of her career, McCarthy has focused on business outcomes first and foremost and technology secondarily. The former defines the ends, and the latter is simply the means.</p> 
+        <p>Soon after McCarthy joined Aetna a decade ago, she climbed the rungs from CIO to head of Business Solutions Delivery, which brought together all IT project management, development, quality engineering, and IT-related business-process reengineering functions, necessary to create, develop and deliver end-to-end business solutions. She then became senior vice president of Innovation, Technology, and Service Operations. Finally, near the end of 2010, McCarthy took on her current role as executive vice president of Operations and Technology. In that role, she continues to have responsibility for clinical innovation, technology and service operations, but she has added responsibility for process and performance improvement, procurement, and real estate services for Aetna.</p> 
+        <p>As McCarthy describes herein, the key has been to continue to push the envelope on value creation, and to demonstrate that value in ways that the rest of the organization can understand. Considering the lofty position she has achieved since beginning her time as CIO, this is a path worth emulating.</p> 
+        <p>(The “Beyond CIO” series kicked off with&nbsp;<strong>this article</strong>, including interviews with executives at companies such as HP, American Express, Marsh &amp; McLennan, Fifth Third Bank, Symantec, and T.D. Ameritrade, among others. If you are interested in future articles in the series, please click the “Follow” link above.)</p> 
+        <p><strong>Peter High: </strong>Meg, you are a business leader with an IT background, and evidence that IT leaders are business leaders.&nbsp; Can you begin by sharing your perspectives on the role of IT in the insurance industry generally and at Aetna more specifically?</p> 
+        <p><strong>Meg McCarthy: </strong>Technology is powering the future of the healthcare and insurance industries.&nbsp; The role of the consumer, the impact of mobile technology and social media require the industry to constantly reinvent itself.</p> 
+        <p>Aetna is more than a health care company, we are a health care information technology company and we’re constantly investing in technology to revolutionize the health care system. Aetna is focused on bringing innovative new ideas to the market.</p> 
+        <p>Over the past several years, Aetna has made a few key acquisitions in this space. Medicity is the largest provider of health information exchange technology in the country. Aetna’s iTriage application provides consumers with fingertip access to the latest technology and medical information by allowing users to research their symptoms, find a medical provider that best serves their personal needs, and book an appointment – all from their smartphone. iTriage is approaching 10 million downloads already. ActiveHealth’s integrated population health management solutions are designed to help customers improve health outcomes and lower medical costs, through data analytics, evidence-based clinical decision support and targeted health and wellness programs.</p> 
+        <p>Our technology stack, under the Healthagen brand, supports our Accountable Care Solutions strategy by bringing together our integrated suite of payer-neutral solutions and technologies that are designed to improve care quality, control health care costs and enable consumers to better participate with their health care professionals in making choices about their health and their care.</p> 
+        <p>Aetna CarePass features more than 20 market-leading consumer app partners, and enables consumers, with a single secure sign-on, to share information across some of the most popular health and fitness apps, and create a personalized health experience. CarePass also now offers a developer portal, featuring 11 API (application programming interface) partners, that includes access to unique data and services from both Aetna and third-party partners via APIs. Aetna is creating IT platforms and applications for public and private health exchange offerings that will become available later this year.</p> 
+        <p>We’re providing new ways to connect doctors with information to help them make evidence-based decisions, through a pilot program from Aetna Innovation Labs. &nbsp;Our pilot makes information about the best clinical practices in cancer care available through Aetna’s iNexx data exchange and applications platform.</p> 
+        <p>Creating new ideas and technology solutions for both providers and customers is just one area of focus for Aetna. Business analytics are helping our medical provider partners to refine and enhance their clinical care decisions. Big data – managing billions of pieces of information in real-time – is a key to harnessing that information. Aetna Innovation Labs is combining the big data provided by Aetna and a large national account customer with a supercomputer-enabled platform, to rapidly discover what types of interventions drive better outcomes in those who are at-risk for metabolic syndrome, and for whom these interventions work best.</p> 
+        <p>At Aetna we are taking a leadership role in developing and building a new health care model that is powered by new technologies that give consumers higher value and quality for their health care dollar. Aetna is also establishing strong collaborations with leading health systems to support population health management through Aetna’s Accountable Care Solutions, which combines a commercial health care insurance product, a full technology suite and care management support to achieve a new level of clinical integration and convenience in health care for patients.</p> 
+        <p>Innovation and technology are critical elements in our industry today and will drive the future of health care.</p> 
+        <p><strong>PH: </strong>Do you have a portion of your team that is dedicated to innovation, and how much of your budget is dedicated to innovation projects?<br /> 
+        <br /> <strong>MM:</strong> Innovation at Aetna is threefold – business, clinical and technical. &nbsp;We have several stages of ideation and opportunities for startup and pilot programs, with a goal of ultimately making these programs part of our business. This activity occurs though Aetna Innovation Labs, Healthagen, and our Technology Labs.</p> 
+        <p>Aetna Innovation Labs was launched in 2012 to develop and deploy health care solutions that are three to five years ahead of the market as well as identify new ideas that can improve health care quality and reduce costs. The Innovation Labs are the innovation engine that is helping Aetna stay ahead of the changing marketplace. Healthagen – our portfolio of innovative and growing businesses that is delivering a number of technologies and services that are transforming health care today – is developing health care technologies through innovation, incubation and acquisition. In addition, our Aetna Technology Labs provide an off-network infrastructure where vendor software can be assessed and use cases can be tested by both IT and business personnel. So the Technology Labs are planning and testing solutions for the next-generation of health care technology. These teams help drive innovation at Aetna, and we are expanding their size and scope with significant budget support.</p> 
+        <p><strong>PH: </strong>You are now Executive Vice President, Innovation, Technology and Service Operations at Aetna, with more than 20,000 employees. In that role, you are responsible for clinical innovation, technology and service operations, process and performance improvement, procurement, and real estate services for Aetna.&nbsp; What was the logic in this expansion of responsibilities, and how did the company and you elect to align Operations and Technology so closely?</p> 
+        <p><strong>MM: </strong>I had previously been the leader of the entire IT function. When Aetna went through a business transformation several years ago, it was a natural step for me to take both combined roles of IT and business process and performance improvement, together with our operations. My background in technology and operational success in many different roles made this a perfect fit to combine the current responsibilities into one position with a greater accountability and span of control, driving greater management and business efficiencies but also improving process improvement excellence.</p> 
+        <p><strong>PH: </strong>When you were CIO, did you target this role as your goal for the next step in your career progression?</p> 
+        <p><strong>MM: </strong>Greater roles are earned, not given, and delivering exceptional results leads to greater responsibility. The role of CIO allowed me to demonstrate the contributions that operations and IT organizations can make to businesses, so yes, this seemed like a natural progression in my career.</p> 
+        <p>During the course of my career, I’ve had a variety of opportunities including operations, technology and client service responsibilities. I’ve really moved in and out of operations and technology throughout my career. The ability to understand business issues and use the skills that I built early in my career, while I was navigating across industries and different types of businesses, has been a key in building an interacting and deep set of skills.</p> 
+        <p><strong>PH: </strong>What was it about the role of CIO that unlocked these other opportunities for you?</p> 
+        <p><strong>MM: </strong>As CIO, I had responsibility for not just executing and delivering on our current strategy, but helping to set the strategy for the technology to power the future of healthcare. I had to prepare Aetna as the industry moved to business-to-consumer technology, which required a build out towards broader and deeper capabilities in mobile technologies and big data.</p> 
+        <p>I integrated business process improvements together with setting the technology strategy to deliver end to end business solutions. Delivering those solutions requires a thorough understanding of the business you’re in, collaborating deeply with colleagues, knowing the levers that drive the business, and enabling and supporting business partners to drive growth.</p> 
+        <p>During my career, I’ve had the opportunity to lead significant integrations and programs for companies, and this work gives you broad business experience. Supporting the technology needs of our entire business, and managing and integrating a number of acquisitions has served me well in my current expanded leadership role and for the current integration of Coventry Health Care’s operations and technology into Aetna.</p> 
+        <p><strong>PH: </strong>What advice would you offer for other CIOs who aspire to follow in your footsteps?&nbsp; What decisions and experiences were critical in allowing you pursue bigger roles and responsibilities?</p> 
+        <p><strong>MM: </strong>I believe CIOs should look through a strategic lens – both in leading the IT function, but also setting the strategy and vision for the future of your business. Your biggest strategic risk is falling behind. You have to be constantly aware of the competition and where the industry is going. In my career, from rising through the IT consulting ranks to several stints as CIO in different organizations, I’ve always looked forward – towards improving the area I join, and simultaneously looking for new ways to bring positive change to the company’s bottom line. The most effective CIO’s to drive operational efficiencies while at the same time driving their company’s future business.</p> 
+        <p>Peter High is the President of&nbsp;Metis Strategy, a business and IT advisory firm. He is also the author of <em>World Class IT: Why Businesses Succeed When IT Triumphs</em>, and the moderator of the <em>Forum on World Class IT</em> podcast series. To read his previous Technovation series on the “CIO-plus”.</p>
+        <div class="gray-header">Published</div>
+        <div>Aug 05, 2013</div>
+        <div class="gray-header">Sources</div>
+        <div>Forbes</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a5-->
+<div data-role="page" id="a5">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/MegMcCarthy.png" alt="image"/>
+    <div class="d-title">
+        Women Advance in the CIO Ranks. So Where Are the CEOs?
+    </div>
+    <div class="a-body">
+        <img src="http://go.bloomberg.com/tech-blog/files/2012/02/glassceiling-300x200.jpg" alt="" width="300" height="200" />
+        <p>A corporate glass ceiling is shattering, but there may be others above it.</p>
+        <p>If you work anywhere near technology, that sound you hear is the glass ceiling cracking in America&#8217;s largest companies.</p>
+        <p>More women are stepping into the role of chief information officer in the largest 250 publicly-traded companies. On January 20, Wal-Mart named Karenann Terrell as CIO, succeeding Rollin Lee Ford.</p>
+        <p>Just 11 days earlier, Xerox appointed Carol Zierhoffer, 51, to the CIO post at Xerox, replacing John McDermott. (In fairness, the glass ceiling at Xerox was shattered long ago with the hiring of CEO Anne Mulcahey in 2001 and Ursula Burns in 2009.)</p>
+        <p>While female CEOs are closely tracked, that hasn&#8217;t been true of CIOs &#8212; a position in which women have quietly made major strides. A database of Fortune 500 chief information officers maintained by Boardroom Insiders shows women filling 48 CIO spots at Fortune 250 companies, compared with 13 female CEOs as of October 2011.</p>
+        <p>&#8220;No one seems to realize that 19.2 percent of Fortune 250 CIOs are now women &#8212; up from 10 percent just a few years ago,&#8221; writes Sharon Gillenwater, Boardroom Insiders&#8217; founder and principal. Women are prominent not only on the overall list, but among the top earners: In 2010, Aetna&#8217;s Margaret McCarthy topped the list of publicly disclosed CIO salaries with $5.11 million in compensation.</p>
+        <p>The role of CIO was long the realm of men, mainly because women weren&#8217;t encouraged to major in math, science and engineering. Irma Wyman, one of the first CIOs at a large company, almost didn&#8217;t go to college at all. In 1945, her parents wanted her to work for a few years and get married. They only relented when she was awarded a scholarship to the University of Michigan. She became vice president of Honeywell Corporate Information Management in 1985.</p>
+        <p>Two years later, Carlene Ellis was promoted to vice president of corporate information systems at Intel. She majored in math and statistics at the University of Georgia in the 1960s, despite the professors who tried to convince her another major would be more suitable.</p>
+        <p>All this underlines the question of why there aren&#8217;t more women chief executives. If women fill one in five top spots in the heavily male IT side, wouldn&#8217;t we expect the proportion of women chief executives to be <em>higher</em> than 20 percent? One glass ceiling is cracking, but there still seems to be another barrier somewhere between the CIO and chief executive spots. Why? Is there just a grievous lack of candidates fit for the CEO spot? (Hint: no, there&#8217;s not.) Or is it that even now corporate boards somehow imagine men look more CEO-like?</p>
+        <div class="gray-header">Published</div>
+        <div>Feb 14, 2012</div>
+        <div class="gray-header">Sources</div>
+        <div>http://go.bloomberg.com</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Tweets -->
+<div data-role="page" id="videos">
+    <div class="page-title">
+        <span class="title" style="margin-left:13%">Tweets</span>
+        <a class="right" href='javascript:getTweets();'>
+            <img src="img/refresh.png" style="width:25px"/>
+        </a>
+    </div>
+    <div id="tweetList" class="list">
+        
+    </div>
+    <div id="loader" style="visibility:hidden">
+        <img src="css/images/ajax-loader.gif" style="display: block;margin-left: auto; margin-right: auto;">
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('[data-position=fixed]').fixedtoolbar({ tapToggle:false});
+    var totalEl = 0;
+
+    currentVideoId = "";
+    function playSelectedVideo(id){
+        currentVideoId = id;
+        var video = document.getElementById(id);
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    function stopCurrentVideo() {
+        var video = document.getElementById(currentVideoId);
+        video.pause();
+    }
+
+    function getTweets() {
+        $("#tweetList").html("");
+        $("#loader").css("visibility","visible");
+        var twitterAPI = "http://54.215.134.149:8080/data/getdata?type=SearchTweets&q='Aetna'";
+        $.getJSON( twitterAPI, {
+            format: "json"
+        }).done(function( data ) {
+            var tweets = JSON.parse(data.Error);
+            for(var i = 0; i < tweets.statuses.length; i++) {
+
+                var pp = Date.parse(tweets.statuses[i].created_at);
+                var newDate = new Date(pp);
+
+                $('#tweetList').append(
+                        "<div class='tbg'>"
+                        + "<img class='t-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='t-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+
+                if(i == 0){
+                    $('#news').append(
+                        "<div style='display:block'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }else{
+                    $('#news').append(
+                        "<div style='display:none'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }
+            }
+
+            totalEl = tweets.statuses.length;
+            var currentEl = 0;
+            $("#loader").css("visibility","hidden");
+
+            // Bind tweets to the home page
+            var tid = setInterval(function() {
+                $('#news').children().eq(currentEl).slideUp( "slow", function() {
+                    if(currentEl < totalEl - 1)
+                        currentEl += 1;
+                    else
+                        currentEl = 0;
+
+                    $('#news').children().eq(currentEl).fadeIn("slow");
+                });
+            }, 5000);
+        });
+    }
+
+    getTweets();
+
+    function getMonthName(month){
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        for(var i=0; i< months.length; i++){
+            if(i == month){
+                return months[i];
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>
